@@ -4,15 +4,11 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shriram Jadhav — Journal</title>
-
-    <!-- Google Fonts -->
+    <title>Shriram Jadhav — AI/ML Engineer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=DM+Mono:wght@400;500&family=DM+Sans:wght@300;400;500&display=swap"
         rel="stylesheet">
-
-    <!-- Your CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -26,67 +22,100 @@
             <li><a href="#skills">Skills</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="#projects">Projects</a></li>
+            <li><a href="#hobbies">Hobbies</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
         <div class="nav-status">
             <span class="status-dot"></span>
-            Available for Internships
+            Open to Work
         </div>
     </nav>
 
     <!-- HERO -->
     <section id="hero">
-        <div class="hero-left">
-            <div class="hero-tag">// Entry No. 001</div>
-            <h1 class="hero-title">Shriram<br><em>Jadhav</em></h1>
-            <p class="hero-sub">B.E. Computer Engineering · AI/ML · Backend Dev</p>
-            <p class="hero-desc">
-                A journal of code, curiosity, and craft.
-                Building intelligent systems from Pune, Maharashtra.
-            </p>
-            <div class="hero-btns">
-                <a href="#projects" class="btn-fill">View Projects</a>
-                <a href="#contact" class="btn-outline">Say Hello</a>
+
+        <!-- LEFT: Photo -->
+        <div class="hero-photo-panel">
+            <img src="images/shriram.jpeg" alt="Shriram Jadhav" class="hero-photo-full">
+            <div class="hero-photo-terminal">
+                <div class="terminal-line">&gt; building(intelligent)</div>
+                <div class="terminal-line">&gt; systems_that(matter);</div>
+                <div class="terminal-line terminal-dim">// always learning</div>
             </div>
         </div>
-        <div class="hero-right">
-            <div class="hero-card">
-                <div class="card-label">Current Status</div>
-                <div class="card-stat-row">
-                    <div class="card-stat">
-                        <span class="stat-n">9.03</span>
+
+        <!-- CENTER: Content -->
+        <div class="hero-left">
+            <div class="hero-top">
+                <div class="hero-tag">// Entry No. 001</div>
+                <div class="hero-headline">AI/ML Engineer &amp;<br>Backend Developer</div>
+                <p class="hero-desc">
+                    I build intelligent systems that solve real-world problems.
+                    Passionate about AI/ML, distributed systems and turning
+                    ideas into impact.
+                </p>
+                <div class="hero-pills">
+                    <span class="hero-pill">AI / ML</span>
+                    <span class="hero-pill hero-pill-accent">Backend</span>
+                    <span class="hero-pill">Problem Solver</span>
+                </div>
+                <div class="hero-btns">
+                    <a href="#projects" class="btn-fill">Explore My Work ↗</a>
+                    <a href="#contact" class="btn-outline">Let's Connect ✈</a>
+                </div>
+                <div class="hero-j-hint">
+                    <span class="j-key">J</span>
+                    <span>Press 'J' for developer mode</span>
+                </div>
+            </div>
+            <div class="hero-spacer"></div>
+            <div class="hero-bottom">
+                <div class="hero-big-name">
+                    Shriram<br>Jadhav
+                    <span class="hero-keep-building">Keep Building</span>
+                </div>
+                <div class="hero-stats-row">
+                    <div class="hero-stat">
+                        <div class="stat-icon">🎓</div>
+                        <span class="stat-n" id="cgpa-count">9.03</span>
                         <span class="stat-l">CGPA</span>
                     </div>
-                    <div class="card-stat">
-                        <span class="stat-n" id="leet-count">--</span>
-                        <span class="stat-l">LeetCode</span>
+                    <div class="hero-stat-divider"></div>
+                    <div class="hero-stat">
+                        <div class="stat-icon">💻</div>
+                        <span class="stat-n" id="leet-count">40+</span>
+                        <span class="stat-l">Problems Solved</span>
                     </div>
-                    <div class="card-stat">
-                        <span class="stat-n" id="contrib-count">7</span>
-                        <span class="stat-l">Repos</span>
+                    <div class="hero-stat-divider"></div>
+                    <div class="hero-stat">
+                        <div class="stat-icon">⌥</div>
+                        <span class="stat-n" id="contrib-count">8+</span>
+                        <span class="stat-l">Projects</span>
                     </div>
-                </div>
-                <div class="card-divider"></div>
-                <div class="card-entry">
-                    <span class="entry-key">Institution</span>
-                    <span class="entry-val">DY Patil Institute of Tech</span>
-                </div>
-                <div class="card-entry">
-                    <span class="entry-key">Degree</span>
-                    <span class="entry-val">B.E. Computer Engg.</span>
-                </div>
-                <div class="card-entry">
-                    <span class="entry-key">Location</span>
-                    <span class="entry-val">Pune, Maharashtra</span>
-                </div>
-                <div class="card-entry">
-                    <span class="entry-key">Year</span>
-                    <span class="entry-val">2023 – 2027</span>
+                    <div class="hero-stat-divider"></div>
+                    <div class="hero-stat">
+                        <div class="stat-icon">💼</div>
+                        <span class="stat-n">1</span>
+                        <span class="stat-l">Internship</span>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
 
+        <!-- RIGHT: Vertical Strip -->
+        <div class="hero-strip">
+            <div class="hero-strip-top">
+                <span class="hero-strip-year">2026</span>
+            </div>
+            <div class="hero-strip-mid">
+                <span class="hero-strip-name">Shriram Jadhav</span>
+            </div>
+            <div class="hero-strip-bot">
+                <span class="hero-strip-role">AI / ML Engineer</span>
+            </div>
+        </div>
+
+    </section>
 
     <!-- ABOUT -->
     <section id="about">
@@ -104,12 +133,10 @@
                     <p>My approach combines rigorous problem-solving (DSA in C++) with real-world development skills
                         (Django, DRF, REST APIs). I'm currently strengthening my ML fundamentals through the
                         <strong>Coursera Machine Learning Specialization</strong> — scored 100/100.</p>
-                    <p>Outside the keyboard, I play football as a <strong>midfielder</strong> for the university team — a
-                        sport that taught me to think fast, collaborate, and adapt under pressure.</p>
+                    <p>Outside the keyboard, I play football as a <strong>midfielder</strong> for the university team —
+                        a sport that taught me to think fast, collaborate, and adapt under pressure.</p>
                     <a href="mailto:shriram26102004@gmail.com" class="btn-fill"
-                        style="display:inline-block; margin-top:1rem;">
-                        Download Resume
-                    </a>
+                        style="display:inline-block; margin-top:1rem;">Contact Me</a>
                 </div>
                 <div class="about-cards">
                     <div class="about-card">
@@ -168,91 +195,56 @@
                 <p class="section-sub">Tools I work with</p>
             </div>
             <div class="skills-grid">
-    
                 <div class="skill-category">
-                    <div class="skill-cat-header">
-                        <span class="skill-cat-icon">🐍</span>
-                        <span class="skill-cat-title">Languages</span>
-                    </div>
+                    <div class="skill-cat-header"><span class="skill-cat-icon">🐍</span><span
+                            class="skill-cat-title">Languages</span></div>
                     <div class="skill-tags">
-                        <span class="skill-tag">Python</span>
-                        <span class="skill-tag">C++</span>
-                        <span class="skill-tag">JavaScript</span>
-                        <span class="skill-tag">SQL</span>
-                        <span class="skill-tag">HTML5</span>
-                        <span class="skill-tag">CSS3</span>
+                        <span class="skill-tag">Python</span><span class="skill-tag">C++</span><span
+                            class="skill-tag">JavaScript</span><span class="skill-tag">SQL</span><span
+                            class="skill-tag">HTML5</span><span class="skill-tag">CSS3</span>
                     </div>
                 </div>
-    
                 <div class="skill-category">
-                    <div class="skill-cat-header">
-                        <span class="skill-cat-icon">🧱</span>
-                        <span class="skill-cat-title">Frameworks</span>
-                    </div>
+                    <div class="skill-cat-header"><span class="skill-cat-icon">🧱</span><span
+                            class="skill-cat-title">Frameworks</span></div>
                     <div class="skill-tags">
-                        <span class="skill-tag">Django</span>
-                        <span class="skill-tag">Django REST Framework</span>
-                        <span class="skill-tag">Bootstrap</span>
-                        <span class="skill-tag">Django ORM</span>
+                        <span class="skill-tag">Django</span><span class="skill-tag">Django REST Framework</span><span
+                            class="skill-tag">Bootstrap</span><span class="skill-tag">Django ORM</span>
                     </div>
                 </div>
-    
                 <div class="skill-category">
-                    <div class="skill-cat-header">
-                        <span class="skill-cat-icon">🤖</span>
-                        <span class="skill-cat-title">AI / ML</span>
-                    </div>
+                    <div class="skill-cat-header"><span class="skill-cat-icon">🤖</span><span class="skill-cat-title">AI
+                            / ML</span></div>
                     <div class="skill-tags">
-                        <span class="skill-tag">Scikit-learn</span>
-                        <span class="skill-tag">Pandas</span>
-                        <span class="skill-tag">NumPy</span>
-                        <span class="skill-tag">Matplotlib</span>
-                        <span class="skill-tag">Classification</span>
-                        <span class="skill-tag">Regression</span>
+                        <span class="skill-tag">Scikit-learn</span><span class="skill-tag">Pandas</span><span
+                            class="skill-tag">NumPy</span><span class="skill-tag">Matplotlib</span><span
+                            class="skill-tag">Classification</span><span class="skill-tag">Regression</span>
                     </div>
                 </div>
-    
                 <div class="skill-category">
-                    <div class="skill-cat-header">
-                        <span class="skill-cat-icon">🧠</span>
-                        <span class="skill-cat-title">CS Fundamentals</span>
-                    </div>
+                    <div class="skill-cat-header"><span class="skill-cat-icon">🧠</span><span class="skill-cat-title">CS
+                            Fundamentals</span></div>
                     <div class="skill-tags">
-                        <span class="skill-tag">Data Structures</span>
-                        <span class="skill-tag">Algorithms</span>
-                        <span class="skill-tag">OOP</span>
-                        <span class="skill-tag">Problem Solving</span>
-                        <span class="skill-tag">System Design</span>
+                        <span class="skill-tag">Data Structures</span><span class="skill-tag">Algorithms</span><span
+                            class="skill-tag">OOP</span><span class="skill-tag">Problem Solving</span>
                     </div>
                 </div>
-    
                 <div class="skill-category">
-                    <div class="skill-cat-header">
-                        <span class="skill-cat-icon">🛠️</span>
-                        <span class="skill-cat-title">Dev Tools</span>
-                    </div>
+                    <div class="skill-cat-header"><span class="skill-cat-icon">🛠️</span><span
+                            class="skill-cat-title">Dev Tools</span></div>
                     <div class="skill-tags">
-                        <span class="skill-tag">Git</span>
-                        <span class="skill-tag">GitHub</span>
-                        <span class="skill-tag">VS Code</span>
-                        <span class="skill-tag">PythonAnywhere</span>
-                        <span class="skill-tag">WSGI</span>
+                        <span class="skill-tag">Git</span><span class="skill-tag">GitHub</span><span
+                            class="skill-tag">VS Code</span><span class="skill-tag">PythonAnywhere</span>
                     </div>
                 </div>
-    
                 <div class="skill-category">
-                    <div class="skill-cat-header">
-                        <span class="skill-cat-icon">📊</span>
-                        <span class="skill-cat-title">ML Concepts</span>
-                    </div>
+                    <div class="skill-cat-header"><span class="skill-cat-icon">📊</span><span class="skill-cat-title">ML
+                            Concepts</span></div>
                     <div class="skill-tags">
-                        <span class="skill-tag">Feature Engineering</span>
-                        <span class="skill-tag">Data Preprocessing</span>
-                        <span class="skill-tag">Model Evaluation</span>
-                        <span class="skill-tag">Data Visualization</span>
+                        <span class="skill-tag">Feature Engineering</span><span class="skill-tag">Data
+                            Preprocessing</span><span class="skill-tag">Model Evaluation</span>
                     </div>
                 </div>
-    
             </div>
         </div>
     </section>
@@ -280,27 +272,22 @@
                             <div class="exp-badge">Education</div>
                         </div>
                         <div class="exp-tags">
-                            <span class="exp-tag">Python</span>
-                            <span class="exp-tag">Pandas</span>
-                            <span class="exp-tag">NumPy</span>
-                            <span class="exp-tag">Matplotlib</span>
-                            <span class="exp-tag">Scikit-learn</span>
-                            <span class="exp-tag">Machine Learning</span>
-                            <span class="exp-tag">GitHub</span>
+                            <span class="exp-tag">Python</span><span class="exp-tag">Pandas</span><span
+                                class="exp-tag">NumPy</span><span class="exp-tag">Matplotlib</span><span
+                                class="exp-tag">Scikit-learn</span><span class="exp-tag">Machine Learning</span>
                         </div>
                         <ul class="exp-bullets">
-                            <li>Developed a classification model using the Iris dataset to accurately predict flower species
-                                using Scikit-learn.</li>
-                            <li>Performed data analysis on unemployment datasets — data cleaning, visualization and trend
-                                analysis studying COVID-19 impact.</li>
+                            <li>Developed a classification model using the Iris dataset to accurately predict flower
+                                species using Scikit-learn.</li>
+                            <li>Performed data analysis on unemployment datasets — data cleaning, visualization and
+                                trend analysis studying COVID-19 impact.</li>
                             <li>Built a car price prediction system using regression with full pipeline: preprocessing,
                                 feature engineering and model evaluation.</li>
-                            <li>Managed all project code on GitHub for version control and structured collaboration.</li>
+                            <li>Managed all project code on GitHub for version control and structured collaboration.
+                            </li>
                         </ul>
                     </div>
                 </div>
-    
-                <!-- Placeholder for future experience -->
                 <div class="exp-card exp-upcoming">
                     <div class="exp-left">
                         <div class="exp-period">Next Chapter</div>
@@ -313,17 +300,12 @@
                                 <div class="exp-role">AI/ML · Backend · Full-Stack</div>
                             </div>
                         </div>
-                        <p class="exp-upcoming-text">
-                            Currently open to internships and collaborative opportunities.
-                            If you're building something meaningful — let's talk.
-                        </p>
+                        <p class="exp-upcoming-text">Currently open to internships and collaborative opportunities. If
+                            you're building something meaningful — let's talk.</p>
                         <a href="mailto:shriram26102004@gmail.com" class="btn-fill"
-                            style="display:inline-block; margin-top:1rem;">
-                            Get In Touch
-                        </a>
+                            style="display:inline-block; margin-top:1rem;">Get In Touch</a>
                     </div>
                 </div>
-    
             </div>
         </div>
     </section>
@@ -337,139 +319,76 @@
                 <p class="section-sub">Things I've built</p>
             </div>
             <div class="projects-grid">
-    
                 <div class="project-card project-featured">
-                    <div class="project-meta">
-                        <span class="project-num">01</span>
-                        <span class="project-type">Full-Stack · Live</span>
-                    </div>
+                    <div class="project-meta"><span class="project-num">01</span><span class="project-type">Full-Stack ·
+                            Live</span></div>
                     <h3 class="project-title">Django Blog Platform</h3>
                     <p class="project-desc">A production-ready multi-category blog platform built from scratch using MVT
-                        architecture. Features custom models, class-based views, pagination, user authentication, and live
-                        deployment on PythonAnywhere.</p>
-                    <div class="project-tags">
-                        <span class="project-tag">Django</span>
-                        <span class="project-tag">Python</span>
-                        <span class="project-tag">SQLite</span>
-                        <span class="project-tag">Bootstrap</span>
-                        <span class="project-tag">PythonAnywhere</span>
-                    </div>
+                        architecture. Features custom models, class-based views, pagination, user authentication, and
+                        live deployment on PythonAnywhere.</p>
+                    <div class="project-tags"><span class="project-tag">Django</span><span
+                            class="project-tag">Python</span><span class="project-tag">SQLite</span><span
+                            class="project-tag">Bootstrap</span><span class="project-tag">PythonAnywhere</span></div>
                     <div class="project-links">
                         <a href="https://shriramjadhav.pythonanywhere.com/" target="_blank"
-                            class="project-link project-link-fill">
-                            ↗ Live Demo
-                        </a>
+                            class="project-link project-link-fill">↗ Live Demo</a>
                         <a href="https://github.com/shriram-jadhav/Django-Blog" target="_blank"
-                            class="project-link project-link-outline">
-                            GitHub →
-                        </a>
+                            class="project-link project-link-outline">GitHub →</a>
                     </div>
                 </div>
-    
                 <div class="project-card">
-                    <div class="project-meta">
-                        <span class="project-num">02</span>
-                        <span class="project-type">ML · Classification</span>
-                    </div>
+                    <div class="project-meta"><span class="project-num">02</span><span class="project-type">ML ·
+                            Classification</span></div>
                     <h3 class="project-title">Iris Classification Model</h3>
                     <p class="project-desc">Supervised classification model on the Iris dataset using Scikit-learn. Full
-                        pipeline of data exploration, feature analysis, model training and evaluation with accuracy metrics.
-                    </p>
-                    <div class="project-tags">
-                        <span class="project-tag">Python</span>
-                        <span class="project-tag">Scikit-learn</span>
-                        <span class="project-tag">Pandas</span>
-                        <span class="project-tag">Matplotlib</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/shriram-jadhav/CodeAlphaTasks" target="_blank"
-                            class="project-link project-link-fill">
-                            GitHub →
-                        </a>
-                    </div>
+                        pipeline of data exploration, feature analysis, model training and evaluation.</p>
+                    <div class="project-tags"><span class="project-tag">Python</span><span
+                            class="project-tag">Scikit-learn</span><span class="project-tag">Pandas</span></div>
+                    <div class="project-links"><a href="https://github.com/shriram-jadhav/CodeAlphaTasks"
+                            target="_blank" class="project-link project-link-fill">GitHub →</a></div>
                 </div>
-    
                 <div class="project-card">
-                    <div class="project-meta">
-                        <span class="project-num">03</span>
-                        <span class="project-type">ML · Regression</span>
-                    </div>
+                    <div class="project-meta"><span class="project-num">03</span><span class="project-type">ML ·
+                            Regression</span></div>
                     <h3 class="project-title">Car Price Predictor</h3>
-                    <p class="project-desc">End-to-end car price prediction system using regression. Full pipeline — data
-                        preprocessing, feature engineering, model training and evaluation on real-world automotive datasets.
-                    </p>
-                    <div class="project-tags">
-                        <span class="project-tag">Python</span>
-                        <span class="project-tag">Scikit-learn</span>
-                        <span class="project-tag">Pandas</span>
-                        <span class="project-tag">Regression</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/shriram-jadhav/CodeAlphaTasks" target="_blank"
-                            class="project-link project-link-fill">
-                            GitHub →
-                        </a>
-                    </div>
+                    <p class="project-desc">End-to-end car price prediction system using regression. Full pipeline —
+                        data preprocessing, feature engineering, model training and evaluation.</p>
+                    <div class="project-tags"><span class="project-tag">Python</span><span
+                            class="project-tag">Scikit-learn</span><span class="project-tag">Regression</span></div>
+                    <div class="project-links"><a href="https://github.com/shriram-jadhav/CodeAlphaTasks"
+                            target="_blank" class="project-link project-link-fill">GitHub →</a></div>
                 </div>
-    
                 <div class="project-card">
-                    <div class="project-meta">
-                        <span class="project-num">04</span>
-                        <span class="project-type">Backend · API</span>
-                    </div>
+                    <div class="project-meta"><span class="project-num">04</span><span class="project-type">Backend ·
+                            API</span></div>
                     <h3 class="project-title">Django REST Framework API</h3>
                     <p class="project-desc">Building RESTful APIs using Django REST Framework. Exploring serializers,
-                        viewsets, authentication tokens and API testing — foundation for scalable backend services.</p>
-                    <div class="project-tags">
-                        <span class="project-tag">Django</span>
-                        <span class="project-tag">DRF</span>
-                        <span class="project-tag">REST API</span>
-                        <span class="project-tag">Python</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/shriram-jadhav/Django-drf" target="_blank"
-                            class="project-link project-link-fill">
-                            GitHub →
-                        </a>
-                    </div>
+                        viewsets, authentication tokens and API testing.</p>
+                    <div class="project-tags"><span class="project-tag">Django</span><span
+                            class="project-tag">DRF</span><span class="project-tag">REST API</span></div>
+                    <div class="project-links"><a href="https://github.com/shriram-jadhav/Django-drf" target="_blank"
+                            class="project-link project-link-fill">GitHub →</a></div>
                 </div>
-    
                 <div class="project-card">
-                    <div class="project-meta">
-                        <span class="project-num">05</span>
-                        <span class="project-type">ML · Data Analysis</span>
-                    </div>
+                    <div class="project-meta"><span class="project-num">05</span><span class="project-type">ML · Data
+                            Analysis</span></div>
                     <h3 class="project-title">COVID-19 Unemployment Analysis</h3>
-                    <p class="project-desc">Exploratory data analysis on unemployment datasets studying COVID-19's economic
-                        impact. Includes data cleaning, trend visualization and statistical insights through charts.</p>
-                    <div class="project-tags">
-                        <span class="project-tag">Python</span>
-                        <span class="project-tag">Pandas</span>
-                        <span class="project-tag">Matplotlib</span>
-                        <span class="project-tag">EDA</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/shriram-jadhav/CodeAlphaTasks" target="_blank"
-                            class="project-link project-link-fill">
-                            GitHub →
-                        </a>
-                    </div>
+                    <p class="project-desc">Exploratory data analysis on unemployment datasets studying COVID-19's
+                        economic impact. Includes data cleaning, trend visualization and statistical insights.</p>
+                    <div class="project-tags"><span class="project-tag">Python</span><span
+                            class="project-tag">Pandas</span><span class="project-tag">EDA</span></div>
+                    <div class="project-links"><a href="https://github.com/shriram-jadhav/CodeAlphaTasks"
+                            target="_blank" class="project-link project-link-fill">GitHub →</a></div>
                 </div>
-    
                 <div class="project-card project-next">
-                    <div class="project-meta">
-                        <span class="project-num">∞</span>
-                        <span class="project-type">Coming Soon</span>
-                    </div>
+                    <div class="project-meta"><span class="project-num">∞</span><span class="project-type">Coming
+                            Soon</span></div>
                     <h3 class="project-title">Next Chapter...</h3>
-                    <p class="project-desc">Currently exploring deep learning, neural networks and advanced system design.
-                        The next project is being written — stay tuned.</p>
-                    <div class="project-tags">
-                        <span class="project-tag">Deep Learning</span>
-                        <span class="project-tag">In Progress</span>
-                    </div>
+                    <p class="project-desc">Currently exploring deep learning, neural networks and advanced system
+                        design. The next project is being written — stay tuned.</p>
+                    <div class="project-tags"><span class="project-tag">Deep Learning</span><span class="project-tag">In
+                            Progress</span></div>
                 </div>
-    
             </div>
         </div>
     </section>
@@ -483,75 +402,111 @@
                 <p class="section-sub">Where it all began</p>
             </div>
             <div class="edu-grid">
-    
                 <div class="edu-card">
                     <div class="edu-icon">🎓</div>
                     <div class="edu-content">
                         <div class="edu-top">
                             <div>
-                                <h3 class="edu-institution">Dr. D. Y. Patil Institute of Technology</h3>
+                                <div class="edu-institution">Dr. D. Y. Patil Institute of Technology</div>
                                 <div class="edu-degree">B.E. Computer Engineering</div>
                             </div>
                             <div class="edu-score">9.03 <span>/ 10</span></div>
                         </div>
-                        <div class="edu-bottom">
-                            <span class="edu-year">2023 – 2027</span>
-                            <span class="edu-tag">Current</span>
-                        </div>
+                        <div class="edu-bottom"><span class="edu-year">2023 – 2027</span><span
+                                class="edu-tag">Current</span></div>
                     </div>
                 </div>
-    
                 <div class="edu-card">
                     <div class="edu-icon">📚</div>
                     <div class="edu-content">
                         <div class="edu-top">
                             <div>
-                                <h3 class="edu-institution">Matoshri Junior College, Nashik</h3>
+                                <div class="edu-institution">Matoshri Junior College, Nashik</div>
                                 <div class="edu-degree">12th — HSC Board</div>
                             </div>
                             <div class="edu-score">76.17<span>%</span></div>
                         </div>
-                        <div class="edu-bottom">
-                            <span class="edu-year">2023</span>
-                            <span class="edu-tag">Completed</span>
+                        <div class="edu-bottom"><span class="edu-year">2023</span><span class="edu-tag">Completed</span>
                         </div>
                     </div>
                 </div>
-    
                 <div class="edu-card">
                     <div class="edu-icon">🏫</div>
                     <div class="edu-content">
                         <div class="edu-top">
                             <div>
-                                <h3 class="edu-institution">Silver Oak Universal School, Nashik</h3>
+                                <div class="edu-institution">Silver Oak Universal School, Nashik</div>
                                 <div class="edu-degree">10th — ISCE Board</div>
                             </div>
                             <div class="edu-score">98.20<span>%</span></div>
                         </div>
-                        <div class="edu-bottom">
-                            <span class="edu-year">2021</span>
-                            <span class="edu-tag">Completed</span>
+                        <div class="edu-bottom"><span class="edu-year">2021</span><span class="edu-tag">Completed</span>
                         </div>
                     </div>
                 </div>
-    
-                <div class="edu-card edu-cert">
+                <div class="edu-card">
                     <div class="edu-icon">🏅</div>
                     <div class="edu-content">
                         <div class="edu-top">
                             <div>
-                                <h3 class="edu-institution">Coursera — Machine Learning Specialization</h3>
+                                <div class="edu-institution">Coursera — Machine Learning Specialization</div>
                                 <div class="edu-degree">Supervised Machine Learning Certificate</div>
                             </div>
                             <div class="edu-score">100<span>/ 100</span></div>
                         </div>
-                        <div class="edu-bottom">
-                            <span class="edu-year">2024</span>
-                            <span class="edu-tag edu-tag-gold">Perfect Score</span>
-                        </div>
+                        <div class="edu-bottom"><span class="edu-year">2024</span><span
+                                class="edu-tag edu-tag-gold">Perfect Score</span></div>
                     </div>
                 </div>
-    
+            </div>
+        </div>
+    </section>
+
+    <!-- HOBBIES -->
+    <section id="hobbies">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-tag">// Entry No. 007</div>
+                <h2 class="section-title">Beyond the <em>Screen</em></h2>
+                <p class="section-sub">What I do when I'm not coding</p>
+            </div>
+            <div class="hobbies-grid">
+                <div class="hobby-card">
+                    <div class="hobby-emoji">⚽</div>
+                    <div class="hobby-name">Football</div>
+                    <div class="hobby-desc">University team midfielder. Fast decisions, team play, pressure under fire.
+                    </div><span class="hobby-tag">Team Sport</span>
+                </div>
+                <div class="hobby-card">
+                    <div class="hobby-emoji">🎮</div>
+                    <div class="hobby-name">Gaming</div>
+                    <div class="hobby-desc">Strategy and problem-solving in virtual worlds. Sharpened logical thinking.
+                    </div><span class="hobby-tag">Strategy</span>
+                </div>
+                <div class="hobby-card">
+                    <div class="hobby-emoji">🏸</div>
+                    <div class="hobby-name">Badminton</div>
+                    <div class="hobby-desc">Quick reflexes, sharp focus, and adaptability on the court.</div><span
+                        class="hobby-tag">Precision Sport</span>
+                </div>
+                <div class="hobby-card">
+                    <div class="hobby-emoji">🏊</div>
+                    <div class="hobby-name">Swimming</div>
+                    <div class="hobby-desc">Rhythm, endurance, and solitude. Where I reset and think clearly.</div><span
+                        class="hobby-tag">Endurance</span>
+                </div>
+                <div class="hobby-card">
+                    <div class="hobby-emoji">🏏</div>
+                    <div class="hobby-name">Cricket</div>
+                    <div class="hobby-desc">Patience and precision. Reading the game before it happens.</div><span
+                        class="hobby-tag">Team Sport</span>
+                </div>
+                <div class="hobby-card">
+                    <div class="hobby-emoji">🌍</div>
+                    <div class="hobby-name">Wanderlust</div>
+                    <div class="hobby-desc">Exploring new places, cultures, and perspectives.</div><span
+                        class="hobby-tag">Exploration</span>
+                </div>
             </div>
         </div>
     </section>
@@ -560,12 +515,11 @@
     <section id="contact">
         <div class="container">
             <div class="section-header">
-                <div class="section-tag">// Entry No. 007</div>
+                <div class="section-tag">// Entry No. 008</div>
                 <h2 class="section-title">Get In <em>Touch</em></h2>
                 <p class="section-sub">Let's build something together</p>
             </div>
             <div class="contact-grid">
-    
                 <div class="contact-left">
                     <p class="contact-intro">I'm actively looking for internships, freelance projects and collaborative
                         opportunities in AI/ML and backend development. If you have something exciting — let's talk.</p>
@@ -612,36 +566,23 @@
                         </a>
                     </div>
                 </div>
-    
                 <div class="contact-right">
                     <div class="contact-form">
-                        <div class="form-group">
-                            <label class="form-label">Your Name</label>
-                            <input type="text" class="form-input" placeholder="John Recruiter" id="form-name">
-                        </div>
-                        <div class="form-group">
-                            <label class="form-label">Email Address</label>
-                            <input type="email" class="form-input" placeholder="your@email.com" id="form-email">
-                        </div>
-                        <div class="form-group">
-                            <label class="form-label">Subject</label>
-                            <input type="text" class="form-input" placeholder="Internship Opportunity" id="form-subject">
-                        </div>
-                        <div class="form-group">
-                            <label class="form-label">Message</label>
-                            <textarea class="form-textarea" placeholder="Tell me about the opportunity..."
-                                id="form-message"></textarea>
-                        </div>
-                        <button class="btn-fill form-submit" onclick="handleSubmit(this)">
-                            Send Message →
-                        </button>
+                        <div class="form-group"><label class="form-label">Your Name</label><input type="text"
+                                class="form-input" placeholder="John Recruiter" id="form-name"></div>
+                        <div class="form-group"><label class="form-label">Email Address</label><input type="email"
+                                class="form-input" placeholder="your@email.com" id="form-email"></div>
+                        <div class="form-group"><label class="form-label">Subject</label><input type="text"
+                                class="form-input" placeholder="Internship Opportunity" id="form-subject"></div>
+                        <div class="form-group"><label class="form-label">Message</label><textarea class="form-textarea"
+                                placeholder="Tell me about the opportunity..." id="form-message"></textarea></div>
+                        <button class="btn-fill form-submit" onclick="handleSubmit(this)">Send Message →</button>
                     </div>
                 </div>
-    
             </div>
         </div>
     </section>
-    
+
     <!-- FOOTER -->
     <footer>
         <div class="footer-inner">
@@ -655,17 +596,17 @@
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#experience">Experience</a></li>
                     <li><a href="#projects">Projects</a></li>
+                    <li><a href="#hobbies">Hobbies</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
             <div class="footer-right">
-                <p class="footer-copy">© 2025 Shriram Jadhav</p>
+                <p class="footer-copy">© 2026 Shriram Jadhav</p>
                 <p class="footer-copy">shriram26102004@gmail.com</p>
             </div>
         </div>
     </footer>
 
-    <!-- Your JS -->
     <script src="js/main.js"></script>
 </body>
 
