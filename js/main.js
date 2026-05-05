@@ -390,7 +390,15 @@ async function handleSubmit(btn) {
     const response = await fetch('https://formspree.io/f/xbdwdwpd', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ name, email, subject, message })
+      
+      body: JSON.stringify({
+      name: name,
+      email: email,
+      subject: subject,
+      message: message,
+      _replyto: email
+    })
+
     });
 
     if (response.ok) {
