@@ -302,9 +302,12 @@ function closeDevMode() {
 }
 
 document.addEventListener('keydown', (e) => {
-  if ((e.key === 'j' || e.key === 'J') && !devOpen) openDevMode();
+  const tag = document.activeElement.tagName.toLowerCase();
+  const isTyping = tag === 'input' || tag === 'textarea';
+  if ((e.key === 'j' || e.key === 'J') && !devOpen && !isTyping) openDevMode();
   if (e.key === 'Escape') closeDevMode();
 });
+
 overlay.addEventListener('click', (e) => {
   if (e.target === overlay) closeDevMode();
 });
@@ -367,27 +370,51 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 // ===========================
 // CONTACT FORM
 // ===========================
-function handleSubmit(btn) {
+async function handleSubmit(btn) {
   const name    = document.getElementById('form-name').value.trim();
   const email   = document.getElementById('form-email').value.trim();
   const subject = document.getElementById('form-subject').value.trim();
   const message = document.getElementById('form-message').value.trim();
+
   if (!name || !email || !subject || !message) {
     btn.textContent = '⚠ Please fill all fields';
     btn.style.background = '#c0392b';
     setTimeout(() => { btn.textContent = 'Send Message →'; btn.style.background = ''; }, 2500);
     return;
   }
-  btn.textContent = '✓ Message Sent!';
-  btn.style.background = '#3a7d5a';
+
+  btn.textContent = 'Sending...';
   btn.disabled = true;
-  setTimeout(() => {
-    btn.textContent = 'Send Message →';
-    btn.style.background = '';
-    btn.disabled = false;
-    ['form-name','form-email','form-subject','form-message']
-      .forEach(id => document.getElementById(id).value = '');
-  }, 3000);
+
+  try {
+    const response = await fetch('https://formspree.io/f/xbdwdwpd', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ name, email, subject, message })
+    });
+
+    if (response.ok) {
+      btn.textContent = '✓ Message Sent!';
+      btn.style.background = '#3a7d5a';
+      setTimeout(() => {
+        btn.textContent = 'Send Message →';
+        btn.style.background = '';
+        btn.disabled = false;
+        ['form-name','form-email','form-subject','form-message']
+          .forEach(id => document.getElementById(id).value = '');
+      }, 3000);
+    } else {
+      throw new Error('Failed');
+    }
+  } catch {
+    btn.textContent = '⚠ Failed — try emailing directly';
+    btn.style.background = '#c0392b';
+    setTimeout(() => {
+      btn.textContent = 'Send Message →';
+      btn.style.background = '';
+      btn.disabled = false;
+    }, 3000);
+  }
 }
 
 // Run on load
